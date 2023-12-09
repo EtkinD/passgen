@@ -1,0 +1,10 @@
+{
+    "password": {
+        "default_password_length": 16,
+        "use_lowercase": true,
+        "use_uppercase": true,
+        "use_numbers": true,
+        "use_symbols": true
+    },
+    "key_file": "secret/key"
+}

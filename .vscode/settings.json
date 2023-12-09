@@ -1,0 +1,27 @@
+{
+    "coddx.taskBoard.fileList": ".vscode/taskBoard.md",
+    "todohighlight.isEnable": true,
+    "todohighlight.isCaseSensitive": true,
+    "todohighlight.keywords": [
+        {
+            "text": "TODO",
+            "color": "#ff0000",
+            "backgroundColor": "#000000"
+        },
+        {
+            "text": "FIXME",
+            "color": "#ffffff",
+            "backgroundColor": "#cc7e19"
+        },
+        {
+            "text": "BUG",
+            "color": "#ff0000",
+            "backgroundColor": "rgb(56, 114, 17)"
+        },
+        {
+            "text": "NOTE",
+            "color": "#000000",
+            "backgroundColor": "rgb(134, 151, 23)"
+        }
+    ]
+}

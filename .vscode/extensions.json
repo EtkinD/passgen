@@ -1,0 +1,19 @@
+{
+    "recommendations": [
+        "github.copilot",
+        "github.copilot-chat",
+        "mhutchie.git-graph",
+        "donjayamanne.githistory",
+        "eamodio.gitlens",
+        "britesnow.vscode-toggle-quotes",
+        "coddx.coddx-alpha",
+        "wayou.vscode-todo-highlight",
+        "qwtel.sqlite-viewer",
+        "tal7aouy.rainbow-bracket",
+        "ms-python.vscode-pylance",
+        "pkief.material-icon-theme",
+        "christian-kohler.path-intellisense",
+        "ms-python.python",
+        "ms-python.isort",
+    ]
+}

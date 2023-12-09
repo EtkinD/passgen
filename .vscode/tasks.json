@@ -1,0 +1,79 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "osx": {
+                "command": "${workspaceFolder}/scripts/unix/build.sh",
+                "group": {
+                    "kind": "build",
+                    "isDefault": true
+                }
+            },
+            "linux": {
+                "command": "${workspaceFolder}/scripts/unix/build.sh",
+                "group": {
+                    "kind": "build",
+                    "isDefault": true
+                }
+            },
+            "windows": {
+                "command": "${workspaceFolder}\\scripts\\windows\\build.bat",
+                "group": {
+                    "kind": "build",
+                    "isDefault": true
+                }
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "dedicated",
+                "showReuseMessage": true,
+                "clear": false
+            },
+        },
+        {
+            "label": "clean",
+            "type": "shell",
+            "osx": {
+                "command": "rm",
+                "args": [
+                    "-rf",
+                    "${workspaceFolder}/dist",
+                    "${workspaceFolder}/build",
+                    "${workspaceFolder}/*.spec",
+                    "${workspaceFolder}/**/__pycache__",
+                ],
+            },
+            "linux": {
+                "command": "rm",
+                "args": [
+                    "-rf",
+                    "${workspaceFolder}/dist",
+                    "${workspaceFolder}/**/__pycache__",
+                ],
+            },
+            "windows": {
+                "command": "rmdir",
+                "args": [
+                    "/s",
+                    "/q",
+                    "${workspaceFolder}\\dist",
+                    "${workspaceFolder}\\**\\__pycache__",
+                ],
+            },
+            "presentation": {
+                "echo": false,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": true
+            },
+        }
+    ]
+}

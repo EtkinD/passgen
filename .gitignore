@@ -1,0 +1,15 @@
+# Mac OS
+.DS_Store
+
+# Python
+venv/
+__pycache__/
+*.spec
+
+# Project
+secret/*
+!.gitkeep
+
+# Build
+build/
+dist/
